@@ -2,16 +2,15 @@ import java.util.*;
 
 public class HIndex {
 
-    private List<Integer> citations = new ArrayList<>();
-
-    public HIndex(String input) {
-        if (input == null || input.isEmpty()) {
-            throw new IllegalArgumentException("Empty");
-        }
-        dealInput(input);
+    public HIndex() {
     }
 
-    private void dealInput(String input) {
+    private static List<Integer> dealInput(String input) {
+        if(input == null || input.isEmpty())
+            throw new IllegalArgumentException("Empty input");
+
+        List<Integer> citations = new ArrayList<>();
+
         String[] strs = input.split(",");
         for (int i = 0; i < strs.length; i++) {
             // if not, stop checking others and let user re-input.
@@ -21,21 +20,23 @@ public class HIndex {
             Integer value = Integer.parseInt(strs[i]);
             citations.add(value);
         }
+        return citations;
     }
 
-    public int calcHIndex() {
+    public static int calcHIndex(String input) {
+        List<Integer> citations = HIndex.dealInput(input);
         return hindex(citations);
     }
 
     public static void main(String[] args) {
-        String[] inputs = new String[] {"1,0", "3,2,4,8"};
+        String[] inputs = new String[] {"1,0", "3,-2,4,8"};
 
         for (String input: inputs) {
-            HIndex h = new HIndex(input);
-            System.out.println(h.calcHIndex());
+            // HIndex h = new HIndex(input);
+            System.out.println(HIndex.calcHIndex(input));
         }
     }
-    public int hindex(List<Integer> citations) {
+    public static int hindex(List<Integer> citations) {
 
         citations.sort(Collections.reverseOrder());
 
