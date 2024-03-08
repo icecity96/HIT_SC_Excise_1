@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483f8563-6138-4a0c-9247-ee0ee3494d1e" name="Changes" comment="v0.7 use static methods of a class">
-      <change afterPath="$PROJECT_DIR$/test/HIndexTest.java" afterDir="false" />
+    <list default="true" id="483f8563-6138-4a0c-9247-ee0ee3494d1e" name="Changes" comment="v0.8 design test cases manually">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HIT_SC_Excise1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HIT_SC_Excise1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/HIndexTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/HIndexTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709902929353</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="v0.8 design test cases manually">
+      <option name="closed" value="true" />
+      <created>1709904575763</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709904575763</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,6 +252,7 @@
     <MESSAGE value="v0.4 avoid input string containing illegal characters" />
     <MESSAGE value="v0.5 use java collections instead of arrays" />
     <MESSAGE value="v0.7 use static methods of a class" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.7 use static methods of a class" />
+    <MESSAGE value="v0.8 design test cases manually" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.8 design test cases manually" />
   </component>
 </project>
