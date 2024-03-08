@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483f8563-6138-4a0c-9247-ee0ee3494d1e" name="Changes" comment="v0.5 use java collections instead of arrays">
+    <list default="true" id="483f8563-6138-4a0c-9247-ee0ee3494d1e" name="Changes" comment="v0.7 use static methods of a class">
+      <change afterPath="$PROJECT_DIR$/test/HIndexTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HIT_SC_Excise1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HIT_SC_Excise1.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -60,21 +62,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HIndex.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/icecity96/IdeaProjects/HIT_SC_Excise1/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.platform.ide.impl.presentationAssistant.PresentationAssistantConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HIndex.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "true",
+    "JUnit.HIndexTest.executor": "Run",
+    "JUnit.HIndexTest.testEmptyInput.executor": "Run",
+    "JUnit.HIndexTest.testEmptyInput2.executor": "Run",
+    "JUnit.HIndexTest.testValidInput.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "/Users/icecity96/IdeaProjects/HIT_SC_Excise1/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.HIndexTest">
     <configuration name="HIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HIndex" />
       <module name="HIT_SC_Excise1" />
@@ -82,8 +102,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HIndexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HIT_SC_Excise1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HIndexTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HIndexTest.testEmptyInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HIT_SC_Excise1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HIndexTest" />
+      <option name="METHOD_NAME" value="testEmptyInput" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HIndexTest.testEmptyInput2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HIT_SC_Excise1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HIndexTest" />
+      <option name="METHOD_NAME" value="testEmptyInput2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HIndexTest.testValidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HIT_SC_Excise1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HIndexTest" />
+      <option name="METHOD_NAME" value="testValidInput" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HIndexTest" />
+        <item itemvalue="JUnit.HIndexTest.testEmptyInput" />
+        <item itemvalue="JUnit.HIndexTest.testEmptyInput2" />
+        <item itemvalue="JUnit.HIndexTest.testValidInput" />
         <item itemvalue="Application.HIndex" />
       </list>
     </recent_temporary>
@@ -152,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709889942602</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="v0.7 use static methods of a class">
+      <option name="closed" value="true" />
+      <created>1709902929353</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709902929353</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +244,7 @@
     <MESSAGE value="v0.3 avoid empty input string" />
     <MESSAGE value="v0.4 avoid input string containing illegal characters" />
     <MESSAGE value="v0.5 use java collections instead of arrays" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.5 use java collections instead of arrays" />
+    <MESSAGE value="v0.7 use static methods of a class" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.7 use static methods of a class" />
   </component>
 </project>
