@@ -7,6 +7,12 @@ public class HIndex {
         String[] strs;
         System.out.println("Please input the citation numbers:");
         String line = scanner.nextLine();
+
+        while (line.isEmpty()) {
+            System.out.println("Input is empty, please re-input:");
+            line = scanner.nextLine();
+        }
+
         strs = line.split(",");
         for (int i = 0; i < strs.length; i++) {
             citations[i] = Integer.parseInt(strs[i]);
