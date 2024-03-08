@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Author {
@@ -11,6 +12,7 @@ public class Author {
 
     public void addPaper(Paper p) {
         papers.add(p);
+        Collections.sort(papers, new CitationComparator());
     }
 
     public void modifyCitation(Paper p, int number, boolean increase) {
@@ -18,6 +20,7 @@ public class Author {
             p.increaseCitation(number);
         else
             p.decreaseCitation(number);
+        Collections.sort(papers, new CitationComparator());
     }
 
     public int calcHIndex() {

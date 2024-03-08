@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483f8563-6138-4a0c-9247-ee0ee3494d1e" name="Changes" comment="v0.9 design test cases by equivalence partitioning">
-      <change afterPath="$PROJECT_DIR$/src/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Paper.java" afterDir="false" />
+    <list default="true" id="483f8563-6138-4a0c-9247-ee0ee3494d1e" name="Changes" comment="v1.0 oop">
+      <change afterPath="$PROJECT_DIR$/src/CitationComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Author.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +64,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Author.executor": "Run",
     "Application.HIndex.executor": "Run",
     "Downloaded.Files.Path.Enabled": "true",
     "JUnit.HIndexTest.executor": "Run",
@@ -239,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709905662128</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="v1.0 oop">
+      <option name="closed" value="true" />
+      <created>1709906684858</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709906684858</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,6 +272,7 @@
     <MESSAGE value="v0.7 use static methods of a class" />
     <MESSAGE value="v0.8 design test cases manually" />
     <MESSAGE value="v0.9 design test cases by equivalence partitioning" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.9 design test cases by equivalence partitioning" />
+    <MESSAGE value="v1.0 oop" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.0 oop" />
   </component>
 </project>
