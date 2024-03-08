@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="483f8563-6138-4a0c-9247-ee0ee3494d1e" name="Changes" comment="v0.3 avoid empty input string">
+    <list default="true" id="483f8563-6138-4a0c-9247-ee0ee3494d1e" name="Changes" comment="v0.5 use java collections instead of arrays">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HIndex.java" afterDir="false" />
     </list>
@@ -122,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709888279725</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="v0.4 avoid input string containing illegal characters">
+      <option name="closed" value="true" />
+      <created>1709889087289</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709889087289</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +149,8 @@
     <MESSAGE value="git commit到v0.1 All code in main()" />
     <MESSAGE value="v0.2 separate functions" />
     <MESSAGE value="v0.3 avoid empty input string" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.3 avoid empty input string" />
+    <MESSAGE value="v0.4 avoid input string containing illegal characters" />
+    <MESSAGE value="v0.5 use java collections instead of arrays" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.5 use java collections instead of arrays" />
   </component>
 </project>

@@ -1,9 +1,11 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class HIndex {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int[] citations = new int[100];
+        // int[] citations = new int[100];
+        List<Integer> citations = new ArrayList<>();
+
         String[] strs;
         System.out.println("Please input the citation numbers:");
 
@@ -26,7 +28,8 @@ public class HIndex {
                     legalNumbers = false;
                     break;
                 }
-                citations[i] = Integer.parseInt(strs[i]);
+                Integer value = Integer.parseInt(strs[i]);
+                citations.add(value);
             }
             if (legalNumbers) {
                 break;
@@ -38,32 +41,19 @@ public class HIndex {
         System.out.println("The h-index is: " + hindex);
     }
 
-    public static int hindex(int[] citations) {
-        // bubble sorting
-        sort(citations);
+    public static int hindex(List<Integer> citations) {
+
+        citations.sort(Collections.reverseOrder());
 
         // calculate h-index
         int hindex = 0;
-        for (int i = 0; i < citations.length; i++) {
-            if (citations[i] >= i + 1) {
+        for (int i = 0; i < citations.size(); i++) {
+            if (citations.get(i) >= i + 1) {
                 hindex = i + 1;
             } else {
                 break;
             }
         }
         return hindex;
-    }
-
-    private static void sort(int[] array) {
-        int number = array.length;
-        for (int i = 0; i < number - 1; i++) {
-            for (int j = 0; j < number - i - 1; j++) {
-                if (array[j] < array[j+1] ) {
-                    int temp = array[j+1];
-                    array[j+1] = array[j];
-                    array[j] = temp;
-                }
-            }
-        }
     }
 }
