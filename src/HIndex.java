@@ -1,47 +1,41 @@
 import java.util.*;
 
 public class HIndex {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        // int[] citations = new int[100];
-        List<Integer> citations = new ArrayList<>();
 
-        String[] strs;
-        System.out.println("Please input the citation numbers:");
+    private List<Integer> citations = new ArrayList<>();
 
-        // loop, until user inputs legal string
-        while (true) {
-            String line = scanner.nextLine();
-            // if the input is empty.
-            while (line.isEmpty()) {
-                System.out.println("Input is empty, please re-input:");
-                line = scanner.nextLine();
-            }
-
-            // check if each part is non-negative integer
-            boolean legalNumbers = true;
-            strs = line.split(",");
-            for (int i = 0; i < strs.length; i++) {
-                // if not, stop checking others and let user re-input.
-                if (! strs[i].matches("[0-9]+")) {
-                    System.out.println(strs[i] + " is illegal, please re-input:");
-                    legalNumbers = false;
-                    break;
-                }
-                Integer value = Integer.parseInt(strs[i]);
-                citations.add(value);
-            }
-            if (legalNumbers) {
-                break;
-            }
+    public HIndex(String input) {
+        if (input == null || input.isEmpty()) {
+            throw new IllegalArgumentException("Empty");
         }
-
-        int hindex = hindex(citations);
-
-        System.out.println("The h-index is: " + hindex);
+        dealInput(input);
     }
 
-    public static int hindex(List<Integer> citations) {
+    private void dealInput(String input) {
+        String[] strs = input.split(",");
+        for (int i = 0; i < strs.length; i++) {
+            // if not, stop checking others and let user re-input.
+            if (! strs[i].matches("[0-9]+")) {
+                throw new IllegalArgumentException(strs[i] + " is illegal");
+            }
+            Integer value = Integer.parseInt(strs[i]);
+            citations.add(value);
+        }
+    }
+
+    public int calcHIndex() {
+        return hindex(citations);
+    }
+
+    public static void main(String[] args) {
+        String[] inputs = new String[] {"1,0", "3,2,4,8"};
+
+        for (String input: inputs) {
+            HIndex h = new HIndex(input);
+            System.out.println(h.calcHIndex());
+        }
+    }
+    public int hindex(List<Integer> citations) {
 
         citations.sort(Collections.reverseOrder());
 
